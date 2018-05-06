@@ -1,0 +1,156 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+a{
+  color:#000;
+  text-decoration: none;
+}
+ul,ol{
+  list-style: none;
+}
+html,body{
+  height:100%;
+  position: relative;
+}
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+main{
+  height: calc(100% - 50px);
+  background: #fff;
+  overflow-x: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+main section{
+  display: none;
+}
+main section.active{
+  display: block;
+}
+footer{
+  position:absolute;
+  left:0;
+  bottom:0;
+  width: 100%;
+  height:50px;
+  border-top:1px solid #ddd;
+}
+footer ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+footer ul li{
+  flex:1;
+  text-align: center;
+}
+footer ul li.active{
+  color:#ff5722;
+}
+footer ul li span{
+  display: block;
+  font-size: 14px;
+}
+footer ul li span svg{
+  font-size:20px;
+}
+.item {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.item>a {
+  display: block;
+  display: flex;
+}
+.cover {
+  padding:10px;
+}
+.cover img {
+  width: 85px;
+}
+.detail {
+  flex: 1;
+  line-height: 1.2em;
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+.detail h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.detail div {
+  color: #777;
+  padding-top: 5px;
+}
+.detail .score {
+  color: #ff5722;
+}
+.detail .directors{
+  display: flex;
+  align-items: center;
+}
+.detail .directors a{
+  display: flex;
+  align-items: center;
+}
+.directors img{
+  width: 30px;
+  height:30px;
+  border-radius:50%;
+}
+.casts{
+  display: flex;
+  align-items: center;
+}
+.actor{
+  display:  flex;
+  align-items:  center;
+  margin: 5px auto;
+}
+.actor img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.loading {
+  text-align: center;
+  padding: 5px;
+  display: none;
+}
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg);  }
+}
+.loading .icon{
+  display: inline-block;
+  animation: 1s rotate linear infinite;
+}
+.search .search-container {
+  display: flex;
+  margin: 10px;
+}
+.search .search-content {
+  flex: 1;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  background-color: #eee;
+}
+.search .search-btn {
+  color: #fff;
+  height: 30px;
+  padding: 5px 20px;
+  border: 1px solid #ff5722;
+  border-radius: 5px;
+  background-color: #ff5722;
+}
